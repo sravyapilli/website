@@ -345,7 +345,7 @@
             $.ajax({
                 contentType: "application/json",
                 type: "GET",
-                url: "http://localhost:5000/get-all-projects",
+                url: "https://sravyaprojects.herokuapp.com/get-all-projects",
                 success: function (data) {
                     $('#loading').hide();
                     $.each(data, function (i, obj) {
@@ -377,7 +377,7 @@
                     dataType: "json",
                     contentType: "application/json",
                     data: JSON.stringify(data),
-                    url: "http://localhost:5000/add-project",
+                    url: "https://sravyaprojects.herokuapp.com/add-project",
                     success: function (result) {
                         $('#example').dataTable().fnClearTable();
                         getData();
